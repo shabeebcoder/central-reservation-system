@@ -1,0 +1,64 @@
+#calander {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-collapse: collapse;
+}
+
+#calander tr,
+#calander tbody {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(7, 1fr);
+}
+#calander tr {
+  border-bottom: solid #ebecf0 1px;
+}
+#calander th {
+  color: #a9a9a9;
+  display: flex;
+  width: 80px;
+  justify-content: center;
+}
+
+#calander td {
+  height: 80px;
+  width: 80px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid #ebecf0 1px;
+}
+.calander td:hover {
+  background-color: #ebecf0;
+}
+caption {
+  grid-column: 1/-1;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+  font-weight: bold;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border-radius: 50%;
+  font-weight: bold;
+  color: white;
+  padding: 2px;
+  font-weight: 600;
+  font-size: 10px;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+.rate {
+  position: absolute;
+}
